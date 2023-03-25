@@ -94,6 +94,8 @@ public class WelcomeSoundPlugin: CAPPlugin {
     private func welcomeSoundConfig() -> WelcomeSoundConfig {
         var config = WelcomeSoundConfig()
         let preferences = UserDefaults.standard
+        config.enable = getConfig().getBoolean("enable", config.enable)
+        config.fileName = getConfig().getString("fileName", config.fileName)!
         if let enable = preferences.object(forKey: "welcomeSoundEnable") as? Bool {
             config.enable = enable
         }

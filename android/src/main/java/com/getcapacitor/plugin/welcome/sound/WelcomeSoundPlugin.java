@@ -99,8 +99,8 @@ public class WelcomeSoundPlugin extends Plugin {
     private WelcomeSoundConfig welcomeSoundConfig() {
         SharedPreferences preferences = context.getSharedPreferences("welcomeSound", MODE_PRIVATE);
         WelcomeSoundConfig config = new WelcomeSoundConfig();
-        boolean enable = preferences.getBoolean("enable", config.isEnabled());
-        String fileName = preferences.getString("fileName", config.getFileName());
+        boolean enable = preferences.getBoolean("enable", getConfig().getBoolean("enable", config.isEnabled()));
+        String fileName = preferences.getString("fileName", getConfig().getString("fileName", config.getFileName()));
         config.setEnable(enable);
         config.setFileName(fileName);
         return config;

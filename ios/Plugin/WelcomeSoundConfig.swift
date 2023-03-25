@@ -1,4 +1,4 @@
 public struct WelcomeSoundConfig {
-    var enable = true
+    var enable = false
     var fileName = "welcome.aac"
 }

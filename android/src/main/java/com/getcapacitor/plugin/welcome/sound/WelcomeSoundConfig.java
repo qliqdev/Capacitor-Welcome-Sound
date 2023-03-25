@@ -2,7 +2,7 @@ package com.getcapacitor.plugin.welcome.sound;
 
 public class WelcomeSoundConfig {
 
-    private boolean enable = true;
+    private boolean enable = false;
     private String fileName = "welcome.aac";
 
     public boolean isEnabled() {
