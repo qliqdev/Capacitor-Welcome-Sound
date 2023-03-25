@@ -1,11 +1,11 @@
-# capcitor-welcome-sound
+# capacitor-welcome-sound
 
 Play sound on app open
 
 ## Install
 
 ```bash
-npm install capcitor-welcome-sound
+npm install capacitor-welcome-sound
 npx cap sync
 ```
 
@@ -13,25 +13,56 @@ npx cap sync
 
 <docgen-index>
 
-* [`echo(...)`](#echo)
+* [`enable(...)`](#enable)
+* [`disable()`](#disable)
+* [Interfaces](#interfaces)
 
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
-### echo(...)
+### enable(...)
 
 ```typescript
-echo(options: { value: string; }) => any
+enable(options?: EnableOptions | undefined) => any
 ```
 
-| Param         | Type                            |
-| ------------- | ------------------------------- |
-| **`options`** | <code>{ value: string; }</code> |
+Enable playing sound on app start
+
+| Param         | Type                                                    |
+| ------------- | ------------------------------------------------------- |
+| **`options`** | <code><a href="#enableoptions">EnableOptions</a></code> |
 
 **Returns:** <code>any</code>
 
+**Since:** 1.0.0
+
 --------------------
+
+
+### disable()
+
+```typescript
+disable() => any
+```
+
+Disable playing sound on app start
+
+**Returns:** <code>any</code>
+
+**Since:** 1.0.0
+
+--------------------
+
+
+### Interfaces
+
+
+#### EnableOptions
+
+| Prop           | Type                | Description       | Since |
+| -------------- | ------------------- | ----------------- | ----- |
+| **`fileName`** | <code>string</code> | Filename of sound | 1.0.0 |
 
 </docgen-api>

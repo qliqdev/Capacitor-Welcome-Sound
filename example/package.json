@@ -16,7 +16,7 @@
     "@capacitor/core": "latest",
     "@capacitor/camera": "latest",
     "@capacitor/splash-screen": "latest",
-    "capcitor-welcome-sound": "file:..",
+    "capacitor-welcome-sound": "file:..",
     "@capacitor/ios": "^4.0.0",
     "@capacitor/android": "^4.0.0"
   },
