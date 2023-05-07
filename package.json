@@ -1,6 +1,6 @@
 {
   "name": "capacitor-welcome-sound",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Play sound on app open",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -60,7 +60,6 @@
     "rimraf": "^3.0.2",
     "rollup": "^3.7.5",
     "swiftlint": "^1.0.1",
-    "tslib": "^2.5.0",
     "typescript": "~4.8.4"
   },
   "peerDependencies": {
